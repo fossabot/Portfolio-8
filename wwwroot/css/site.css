@@ -1,0 +1,190 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all
+}
+
+a {
+    color: #0366d6
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac
+}
+
+html {
+    font-size: 14px
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.05)
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit
+}
+
+html {
+    position: relative;
+    min-height: 100%
+}
+
+body {
+    margin-bottom: 60px
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px
+}
+
+#kontakt-nav {
+    transition: .2s;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px
+}
+
+    #kontakt-nav:hover {
+        background-color: #fff;
+        color: #000
+    }
+
+.myName {
+    font-weight: 300;
+    font-size: 59px
+}
+
+.start {
+    margin-top: 30%;
+    margin-bottom: 50%
+}
+
+@media screen and (max-width:440px) {
+    .navbar-toggler {
+        margin-bottom: 10px
+    }
+
+    .myName {
+        font-size: 40px !important
+    }
+}
+
+@media screen and (max-width:880px) {
+    .start {
+        margin-top: 50% !important
+    }
+
+    figcaption {
+        font-size: 25px
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navbar-brand {
+        font-size: 16px
+    }
+
+    #mainmenu {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width:991px) {
+    .email, .name {
+        padding: 6px
+    }
+}
+
+@media screen and (max-width:574px) {
+    .navbar-brand {
+        font-size: 16px
+    }
+
+    #mainmenu {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        text-align: center
+    }
+
+    #kontakt-nav {
+        margin-bottom: 13px
+    }
+
+    .navbar-brand {
+        font-size: 20px !important
+    }
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 10px
+}
+
+.projects-img {
+    border-radius: 5%;
+    transition: all .3s;
+    width: 540px;
+    transform: scale(1)
+}
+
+    .projects-img:hover {
+        transform: scale(1.1)
+    }
+
+.navbar {
+    transition: .8s;
+    font-size: 20px
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #000
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555
+    }

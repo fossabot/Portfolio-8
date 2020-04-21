@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - www</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0" asp-controller="Home" asp-action="Index"><img src="~/images/bezi.png" width="60" height="60" />Krystian Skwierawski</a>
+
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="
+                    #mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="nav switch">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainmenu">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" id="o-mnie-nav" href="#">o mnie</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" id="projekty-nav" href="#">projekty</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" id="umiejetnosci-nav" href="#">umiejętności</a>
+                        </li>
+                        <li class="nav-item  ml-2">
+                            <a class="nav-link" href="#" id="kontakt-nav">kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - www - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+
+        $(document).ready(function () {
+            var NavY = $('nav').offset().top;
+
+            var stickyNav = function () {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('nav').addClass('sticky');
+                } else {
+                    $('nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
