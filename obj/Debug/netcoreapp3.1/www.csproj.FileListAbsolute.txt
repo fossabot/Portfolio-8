@@ -814,7 +814,6 @@ C:\Users\bezi2\source\repos\Portfolio\bin\Debug\netcoreapp3.1\runtimes\win-x86\n
 C:\Users\bezi2\source\repos\Portfolio\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\bezi2\source\repos\Portfolio\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\bezi2\source\repos\Portfolio\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.csprojAssemblyReference.cache
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.csproj.CoreCompileInputs.cache
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.MvcApplicationPartsAssemblyInfo.cache

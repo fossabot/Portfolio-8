@@ -194,9 +194,7 @@ body {
 
 .overlay {
     position: absolute;
-    bottom: 45%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    bottom: 43%;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
@@ -207,4 +205,8 @@ body {
 
 .avatar-container:hover .overlay {
     opacity: 1;
+}
+
+.card{
+    max-width: 350px !important;
 }
