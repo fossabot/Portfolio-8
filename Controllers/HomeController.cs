@@ -24,7 +24,6 @@ namespace www.Controllers
             return View();
         }
 
-        #region API CALLS
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Index(Message message)
@@ -34,14 +33,13 @@ namespace www.Controllers
                 message.Time = DateTime.Now;
                 _db.Messages.Add(message);
                 _db.SaveChanges();
-                _toastNotification.AddSuccessToastMessage("Wiadomość wysłana");
+                _toastNotification.AddSuccessToastMessage("Message not sent");
                 return RedirectToAction(nameof(Index));
             }
 
-            _toastNotification.AddErrorToastMessage("Wiadomość nie wysłana");
+            _toastNotification.AddErrorToastMessage("Message sent");
             return View(message);
         }
-        #endregion
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
