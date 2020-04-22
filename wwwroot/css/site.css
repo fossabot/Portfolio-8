@@ -64,7 +64,7 @@ body {
     line-height: 60px
 }
 
-#kontakt-nav {
+#contact-nav {
     transition: .2s;
     border: 1px solid #000;
     background-color: #000;
@@ -72,28 +72,15 @@ body {
     border-radius: 5px
 }
 
-    #kontakt-nav:hover {
+    #contact-nav:hover {
         background-color: #fff;
         color: #000
     }
 
-.myName {
-    font-weight: 300;
-    font-size: 59px
-}
-
-.start {
-    margin-top: 30%;
-    margin-bottom: 50%
-}
 
 @media screen and (max-width:440px) {
     .navbar-toggler {
         margin-bottom: 10px
-    }
-
-    .myName {
-        font-size: 40px !important
     }
 }
 
@@ -188,3 +175,36 @@ body {
     ::-webkit-scrollbar-thumb:hover {
         background: #555
     }
+
+.avatar-container {
+    border-radius: 50%;
+    position: relative;
+    width: 60%;
+    max-width: 300px;
+    margin-top: 12%;
+    margin-bottom: 25%
+}
+
+.image {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 45%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.avatar-container:hover .overlay {
+    opacity: 1;
+}
