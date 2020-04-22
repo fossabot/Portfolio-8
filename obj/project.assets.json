@@ -9571,11 +9571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bezi2\\source\\repos\\www\\www.csproj",
+      "projectUniqueName": "C:\\Users\\bezi2\\source\\repos\\Portfolio\\www.csproj",
       "projectName": "www",
-      "projectPath": "C:\\Users\\bezi2\\source\\repos\\www\\www.csproj",
+      "projectPath": "C:\\Users\\bezi2\\source\\repos\\Portfolio\\www.csproj",
       "packagesPath": "C:\\Users\\bezi2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bezi2\\source\\repos\\www\\obj\\",
+      "outputPath": "C:\\Users\\bezi2\\source\\repos\\Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Microsoft\\Xamarin\\NuGet\\",
