@@ -6,11 +6,15 @@
     <div class="overlay p-1 bg-white text-dark rounded ">Krystian Skwierawski</div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 bg-dark text-white p-5 text-center">
-            <h1 class="mb-5">About me </h1>
-            <hr class="bg-secondary" />
+<div class="container-fluid bg-dark text-white  p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="my-5">About me </h1>
+                <hr class="bg-secondary" />
+            </div>
+        </div>
+        <div class="row mt-5">
             <p>
                 ignissim vest
                 ibulum metus. Nulla eget ligula et turpis mollis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ut dignissim arcu, in commodo est. Nunc eu pharetra mi, eget dictum nibh. Suspendisse rutrum a lorem eget viverra. Donec ut nisl ac turpis molestie feugiat. Aenean ut odio porttitor, luctu
@@ -139,12 +143,15 @@
     </div>
 </div>
 
-<div class="bg-white text-body text-center p-5 mb-5">
-    <h1 class="mb-5">Contact</h1>
-    <hr class="mb-5"/>
-    <div class="container-fluid mt-5">
-        <div class="row form-group">
-            <div class="mx-auto">
+<div class="container bg-white text-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="mb-5">Skills </h1>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-3 mb-5 mx-auto">
                 <form method="post">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-row py-2">
@@ -169,13 +176,44 @@
                             <span asp-validation-for="Content" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="form-row py-2">
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                    <div class="form-row">
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-primary px-4 py-2">Send</button>
                         </div>
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+
+<div class="container mb-5">
+    <div class="row text-center">
+        <div class="col-4 social-media my-3 mx-auto">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-facebook-f text-center" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="col-4 social-media  my-3 mx-auto">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-github text-center" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="col-4 social-media  my-3 mx-auto">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-linkedin-in text-center" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 </div>

@@ -839,3 +839,4 @@ C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\staticwebassets\ww
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.dll
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.pdb
 C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.genruntimeconfig.cache
+C:\Users\bezi2\source\repos\Portfolio\obj\Debug\netcoreapp3.1\www.csprojAssemblyReference.cache
