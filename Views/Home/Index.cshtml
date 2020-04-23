@@ -1,9 +1,9 @@
 ﻿@model www.Models.Message
 @await Component.InvokeAsync("NToastNotify")
 
-<div class="avatar-container mx-auto">
-    <img src="~/images/avatar.png" alt="Avatar" class="image img-fluid">
-    <div class="overlay shadow p-1 bg-white text-dark rounded ">Krystian Skwierawski</div>
+<div class="avatar-container mx-auto ">
+    <img src="~/images/avatar.png" alt="Avatar" class="image shadow-lg">
+    <div class="overlay p-1 bg-white text-dark rounded ">Krystian Skwierawski</div>
 </div>
 
 <div class="container-fluid">
@@ -141,18 +141,18 @@
 
 <div class="bg-white text-body text-center p-5 mb-5">
     <h1 class="mb-5">Contact</h1>
-    <hr />
-    <div class="container mt-4">
+    <hr class="mb-5"/>
+    <div class="container-fluid mt-5">
         <div class="row form-group">
-            <div class="col-8 offset-2">
+            <div class="mx-auto">
                 <form method="post">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-row py-2">
-                        <div class="col-sm-12 col-lg-6 name">
+                        <div class="col-lg-6 name">
                             <input asp-for="Name" placeholder="Name" class="form-control" />
                             <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
-                        <div class="col-sm-12 col-lg-6 email">
+                        <div class="col-lg-6 email">
                             <input asp-for="Email" type="email" placeholder="Email" class="form-control" />
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>

@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krystian Skwierawski</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white p-0">
             <div class="container-fluid">
-                <a class="navbar-brand p-0" asp-controller="Home" asp-action="Index"><img src="~/images/bezi.png" width="60" height="60" />Krystian Skwierawski</a>
+                <a class="navbar-brand ml-3" asp-controller="Home" asp-action="Index">Krystian Skwierawski</a>
 
-                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="
+                <button class="navbar-toggler my-2 mr-3" type="button" data-toggle="collapse" data-target="
                     #mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="nav switch">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,7 +43,6 @@
         @RenderBody()
     </main>
 
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - www - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -54,7 +53,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
-
         $(document).ready(function () {
             var NavY = $('nav').offset().top;
 
@@ -74,7 +72,6 @@
                 stickyNav();
             });
         });
-
     </script>
     @RenderSection("Scripts", required: false)
 </body>

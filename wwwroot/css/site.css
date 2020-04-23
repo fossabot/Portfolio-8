@@ -182,12 +182,11 @@ body {
     width: 60%;
     max-width: 300px;
     margin-top: 12%;
-    margin-bottom: 25%
+    margin-bottom: 25%;
 }
 
 .image {
     border-radius: 50%;
-    display: block;
     width: 100%;
     height: auto;
 }

@@ -30,15 +30,20 @@ namespace www.Controllers
         {
             if (ModelState.IsValid)
             {
-                message.Time = DateTime.Now;
-                _db.Messages.Add(message);
-                _db.SaveChanges();
+                AddMessage(message);
                 _toastNotification.AddSuccessToastMessage("Message not sent");
                 return RedirectToAction(nameof(Index));
             }
 
             _toastNotification.AddErrorToastMessage("Message sent");
             return View(message);
+        }
+
+        void AddMessage(Message message)
+        {
+            message.Time = DateTime.Now;
+            _db.Messages.Add(message);
+            _db.SaveChanges();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
