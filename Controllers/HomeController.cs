@@ -31,17 +31,17 @@ namespace www.Controllers
             if (ModelState.IsValid)
             {
                 AddMessage(message);
-                _toastNotification.AddSuccessToastMessage("Message not sent");
+                _toastNotification.AddSuccessToastMessage("Message sent");
                 return RedirectToAction(nameof(Index));
             }
 
-            _toastNotification.AddErrorToastMessage("Message sent");
+            _toastNotification.AddErrorToastMessage("Message sent sent");
             return View(message);
         }
 
         void AddMessage(Message message)
         {
-            message.Time = DateTime.Now;
+            message.Time = DateTime.Now.ToShortDateString();
             _db.Messages.Add(message);
             _db.SaveChanges();
         }

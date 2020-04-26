@@ -19,6 +19,6 @@ namespace www.Models
         [Required]
         public string Content { get; set; }
 
-        public DateTime Time { get; set; }
+        public string Time { get; set; }
     }
 }
