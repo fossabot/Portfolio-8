@@ -74,6 +74,17 @@
             });
         });
     </script>
+    <script src="~/js/jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            $.scrollTo(0);
+            $('#about-me-nav').click(function () { $.scrollTo($('#about-me'), 500); });
+            $('#projects-nav').click(function () { $.scrollTo($('#projects'), 500); });
+            $('#skills-nav').click(function () { $.scrollTo($('#skills'), 500); });
+            $('#contact-nav').click(function () { $.scrollTo($('#contact'), 500); });
+        }
+        );
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
