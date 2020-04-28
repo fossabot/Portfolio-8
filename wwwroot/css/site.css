@@ -177,7 +177,7 @@ body {
     }
 
 .start-text {
-    margin-top: 7%;
+    margin-top: 4%;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
 }
@@ -227,7 +227,7 @@ body {
     text-align: center;
 }
 
-.avatar-container:hover .overlay {
+.avatar:hover .overlay {
     opacity: 1;
 }
 
