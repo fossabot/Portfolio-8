@@ -176,14 +176,38 @@ body {
         background: #555
     }
 
+.start-text {
+    margin-top: 7%;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .avatar-container {
+    margin-top: 12%;
+    margin-bottom: 25%;
+}
+
+.avatar {
+    min-width: 267px;
     border-radius: 50%;
     position: relative;
     width: 60%;
     max-width: 300px;
-    margin-top: 12%;
-    margin-bottom: 25%;
 }
+
+@media screen and (max-width:767px) {
+    .avatar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .start-text {
+        margin-top: 0;
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
 
 .image {
     border-radius: 50%;
@@ -192,9 +216,10 @@ body {
 }
 
 .overlay {
+
     position: absolute;
     bottom: 43%;
-    width: 100%;
+    width: 90%;
     transition: .5s ease;
     opacity: 0;
     color: white;

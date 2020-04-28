@@ -2,10 +2,21 @@
 @await Component.InvokeAsync("NToastNotify")
 
 <header>
-    <div class="avatar-container mx-auto ">
-        <img src="~/images/avatar.png" alt="Avatar" class="image shadow-lg">
-        <div class="overlay p-1 bg-white text-dark rounded ">Krystian Skwierawski</div>
+    <div class="container avatar-container">
+        <div class="row">
+            <div class="avatar ml-md-auto col-md-6">
+                <img src="~/images/avatar.png"  alt="Avatar" class="image shadow-lg">
+                <div class="overlay p-1 bg-white text-dark rounded ">Krystian Skwierawski</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <h1 class="start-text text-md-left">
+                    .NET <br />
+                    Developer
+                </h1>
+            </div>
+        </div>
     </div>
+   
 </header>
 
 <section id="about-me">
