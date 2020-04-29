@@ -64,18 +64,9 @@ body {
     line-height: 60px
 }
 
-#contact-nav {
-    transition: .2s;
-    border: 1px solid #000;
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px
+#contact-nav:hover {
+    color: white;
 }
-
-    #contact-nav:hover {
-        background-color: #fff;
-        color: #000
-    }
 
 
 @media screen and (max-width:440px) {
@@ -216,7 +207,6 @@ body {
 }
 
 .overlay {
-
     position: absolute;
     bottom: 43%;
     width: 90%;
